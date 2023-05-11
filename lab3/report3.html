@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Звіти</title>
+        <meta charset="UTF-8">
+        <style>
+        .container {
+            background: linear-gradient(0deg, rgba(255,251,199,1) 0%, rgba(0,78,76,1) 100%);
+            border-radius: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+        }
+
+        .left {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+
+        .right {
+            width: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: row; */
+            /* align-items: center;
+            justify-content: center; */
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .title {
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .imageCart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 33%;
+        }
+
+        .labNumber {
+            background-color: lightblue;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: stretch;
+            margin-top: 10px;
+        }
+
+        .labNumber button {
+            flex: 1;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color:lightslategray
+
+        }
+        .lab-data {
+            background-color: lightblue;
+            border-radius: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            align-items: self-start;
+        }
+
+        .labDataLeft {
+            background-color: rgb(79, 149, 148);
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        .labDataRight {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 240, 186);
+            flex-direction: column;
+            border-radius: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .labDataLeft button {
+            margin: 10px;
+            height: 50px;
+            border-radius: 10px;
+            background-color:bisque
+        }
+        .scheme-image {
+            width: 60%;
+        }
+
+        body {
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+
+        
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ"
+                    ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND та BACKEND РОЗРОБОК"</h1>
+                <h4>Бригада N22</h4>
+            </div>
+            <div class="right">
+                <div class="imageCart">
+                    <img class="image" src="images/taras.jpg">
+                    <h2 class="title">Колесник<br>Тарас</h2>
+                </div>
+                <div class="imageCart">
+                    <img class="image" src="images/natalia.jpg">
+                    <h2 class="title">Чала<br>Наталія</h2>
+                </div>
+                <div class="imageCart">
+                    <img class="image" src="images/mykhailo.jpg">
+                    <h2 class="title">Ільницький<br>Михайло</h2>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="labNumber">
+            <button onclick="window.location.href= 'report1.html'">
+                Lab 1
+            </button>
+            <button onclick="window.location.href= 'report2.html'">
+                Lab 2
+            </button>
+            <button onclick="window.location.href= 'report3.html'">
+                Lab 3
+            </button>
+            <button>Lab 4</button>
+            <button>Lab 5</button>
+            <button>Lab 6</button>
+            <button>Lab 7</button>
+            <button>Lab 8</button>
+            <button>Lab 9</button>
+        </div>
+
+        <div class="lab-data">
+            <div class="labDataLeft">
+                <button onclick="
+                    temaContainer.hidden= false
+                    task1.hidden= true
+                    fixtable.hidden= true
+                    flextable.hidden= true
+                    fixblock.hidden= true
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= true
+                    report.hidden= true
+                    ">Тема, мета ЛР N3 місце розташування сайту, звіту</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= false
+                    fixtable.hidden= true
+                    flextable.hidden= true
+                    fixblock.hidden= true
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= true
+                    report.hidden= true
+                    ">Завдання N1<br>Зовнішній вигляд макету. Код макету</button>
+                <button>Завдання N2</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= true
+                    fixtable.hidden= false
+                    flextable.hidden= true
+                    fixblock.hidden= true
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= true
+                    report.hidden= true
+                    " style="width: 70%;">Фіксована таблична верстка</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= true
+                    fixtable.hidden= true
+                    flextable.hidden= false
+                    fixblock.hidden= true
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= true
+                    report.hidden= true
+                    " style="width: 70%;">Гумова таблична верстка</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= true
+                    fixtable.hidden= true
+                    flextable.hidden= true
+                    fixblock.hidden= false
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= true
+                    report.hidden= true
+                    " style="width: 70%;">Фіксована блокова верстка</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= true
+                    fixtable.hidden= true
+                    flextable.hidden= true
+                    fixblock.hidden= true
+                    flexblock.hidden= false
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= true
+                    report.hidden= true
+                    " style="width: 70%;">Гумова блокова верстка</button>
+                <button>Завдання N3 FLEXBOX</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= true
+                    fixtable.hidden= true
+                    flextable.hidden= true
+                    fixblock.hidden= true
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= false
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= true
+                    report.hidden= true
+                    " style="width: 70%;">Скріншот сторінки(Flexbox)</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= true
+                    fixtable.hidden= true
+                    flextable.hidden= true
+                    fixblock.hidden= true
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= false
+                    csscodetask3.hidden= true
+                    report.hidden= true
+                    " style="width: 70%;">HTML-код(FlexBox)</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= true
+                    fixtable.hidden= true
+                    flextable.hidden= true
+                    fixblock.hidden= true
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= false
+                    report.hidden= true
+                    " style="width: 70%;">CSS-код(FlexBox)</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    task1.hidden= true
+                    fixtable.hidden= true
+                    flextable.hidden= true
+                    fixblock.hidden= true
+                    flexblock.hidden= true
+                    scrnpagetask3.hidden= true
+                    htmlcodetask3.hidden= true
+                    csscodetask3.hidden= true
+                    report.hidden= false
+                    ">Висновки</button>
+            </div>
+
+            <div class="labDataRight">
+                <div id="temaContainer"><br> <b>Тема:</b>ВЕРСТКА HTML-ДОКУМЕНТУ.
+                    БЛОКОВА ВЕРСТКА. ВЕРСТКА
+                    ЗАСОБАМИ CSS та FLEXBOX.<br><br><b>Мета:</b><br>- придбати
+                    практичні навички роботи верстки сторінок засобами CSS,
+                    верстки на
+                    основі плаваючих елементів, з’ясувати переваги та недоліки
+                    типів макетів веб-
+                    сторінок<br>
+                    -придбати практичні навички роботи верстки сторінок засобами
+                    CSS та FLEXBOX
+                    <br>
+                    <a href="https://github.com/kolesnykt25/webLab">GitHub
+                        Репозиторій</a>
+                    <br><br>
+                </div>
+
+                <div id="task1" hidden>
+                    <h4>Скріншот макету з Figma:</h4>
+                    <img class="scheme-image" src="images/figmamaket.png"
+                        alt="">
+                    <h4>Скріншот з WEB сторінки:</h4>
+                    <img class="scheme-image" src="images/task1page1.png"
+                        alt="">
+                    <img class="scheme-image" src="images/task1page2.png"
+                        alt="">
+                    <h4>Програмний код макету сайту:</h4>
+                    <p>&lt;!DOCTYPE html&gt;</p>
+
+                    <p>&lt;html&gt;</p>
+
+                    <p>&lt;head&gt;</p>
+
+                    <p>&lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+
+                    <p>&lt;title&gt;IT-компанія&lt;/title&gt;</p>
+
+                    <p>&lt;h1 style=&quot;color:#333; text-align:
+                        center;&quot;&gt;TMN Dev&lt;/h1&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;style&gt;</p>
+
+                    <p>/* стилі для меню */</p>
+
+                    <p>.menu {</p>
+
+                    <p>width: 20%;</p>
+
+                    <p>float: left;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.menu button {</p>
+
+                    <p>display: block;</p>
+
+                    <p>width: 100%;</p>
+
+                    <p>padding: 20px;</p>
+
+                    <p>margin-top: 10px;</p>
+
+                    <p>background-color: #ddd;</p>
+
+                    <p>border: none;</p>
+
+                    <p>text-align: left;</p>
+
+                    <p>font-size: 16px;</p>
+
+                    <p>font-weight: bold;</p>
+
+                    <p>border-radius: 10px;</p>
+
+                    <p>color: #333;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.menu button:hover {</p>
+
+                    <p>background-color: #bbb;</p>
+
+                    <p>color: #fff;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>/* стилі для зображення та таблиць */</p>
+
+                    <p>.content {</p>
+
+                    <p>float: right;</p>
+
+                    <p>width: 80%;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.content button {</p>
+
+                    <p>display: block;</p>
+
+                    <p>width: 170px;</p>
+
+                    <p>height: 70px;</p>
+
+                    <p>margin: 10px;</p>
+
+                    <p>border-radius: 10px;</p>
+
+                    <p>background-color: darkgoldenrod;</p>
+
+                    <p>text-align: center;</p>
+
+                    <p>font-size: 16px;</p>
+
+                    <p>font-weight: bold;</p>
+
+                    <p>color: white;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.content button:hover {</p>
+
+                    <p>background-color: darkolivegreen;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.content img {</p>
+
+                    <p>border-radius: 10px;</p>
+
+                    <p>display: block;</p>
+
+                    <p>max-width: 50%;</p>
+
+                    <p>height: auto;</p>
+
+                    <p>margin: auto;</p>
+
+                    <p>/* margin-bottom: 20px; */</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.content header {</p>
+
+                    <p>text-align: center;</p>
+
+                    <p>color:#333;</p>
+
+                    <p>margin-top: 10px;</p>
+
+                    <p>margin-bottom: 10px;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.content table {</p>
+
+                    <p>width: 100%;</p>
+
+                    <p>margin-bottom: 20px;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.content th, .content td {</p>
+
+                    <p>padding: 10px;</p>
+
+                    <p>text-align: center;</p>
+
+                    <p>border: 1px solid #ddd;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.content th {</p>
+
+                    <p>background-color: #eee;</p>
+
+                    <p>font-weight: bold;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>input[type=&quot;text&quot;] {</p>
+
+                    <p>border: transparent;</p>
+
+                    <p>background-color:darkgoldenrod;</p>
+
+                    <p>color: white;</p>
+
+                    <p>border-radius: 10px;</p>
+
+                    <p>height: 20px;</p>
+
+                    <p>margin-bottom: 5px;</p>
+
+                    <p>font-family: sans-serif;</p>
+
+                    <p>padding-left: 10px;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.flex-center {</p>
+
+                    <p>display: flex;</p>
+
+                    <p>align-items: center;</p>
+
+                    <p>width: 100%;</p>
+
+                    <p>flex-direction: column;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.rounded-box {</p>
+
+                    <p>width: 50%;</p>
+
+                    <p>border-radius: 10px;</p>
+
+                    <p>background-color: #eee;</p>
+
+                    <p>padding: 10px;</p>
+
+                    <p>margin-top: 10px;</p>
+
+                    <p>margin-bottom: 10px;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.rounded-box ul {</p>
+
+                    <p>list-style: none;</p>
+
+                    <p>padding: 0;</p>
+
+                    <p>margin: 0;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.rounded-box ol li ul {</p>
+
+                    <p>padding: 0;</p>
+
+                    <p>margin-top: 10px;</p>
+
+                    <p>margin-left: 10px;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>.rounded-box li {</p>
+
+                    <p>align-content: center;</p>
+
+                    <p>border-radius: 10px;</p>
+
+                    <p>padding: 5px;</p>
+
+                    <p>margin-bottom: 5px;</p>
+
+                    <p>background-color: #fff;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>#customh {</p>
+
+                    <p>color: red;</p>
+
+                    <p>}</p>
+
+                    <p>#strokedH {</p>
+
+                    <p>-webkit-text-stroke: 1px purple; /* для safari*/</p>
+
+                    <p>text-stroke: 1px purple;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>#backgroundH {</p>
+
+                    <p>background-color: burlywood;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>h4 {</p>
+
+                    <p>color: darkslategrey;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>body {</p>
+
+                    <p>font-size: 15px;</p>
+
+                    <p>font-family: sans-serif;</p>
+
+                    <p>}</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;/style&gt;</p>
+
+                    <p>&lt;/head&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;body&gt;</p>
+
+                    <p>&lt;div class=&quot;menu&quot;&gt;</p>
+
+                    <p>&lt;button&gt;Головне меню&lt;/button&gt;</p>
+
+                    <p>&lt;button&gt;Контакти&lt;/button&gt;</p>
+
+                    <p>&lt;button&gt;Мій аккаунт&lt;/button&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;content&quot;&gt;</p>
+
+                    <p>&lt;img src=&quot;images/logo.jpg&quot;&gt;</p>
+
+                    <p>&lt;div class=&quot;flex-center&quot;&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;h3 id=&quot;strokedH&quot;&gt;it -
+                        компанія&lt;/h3&gt;</p>
+
+                    <p>&lt;h4 id=&quot;backgroundH&quot;&gt;Будь-яке завдання за
+                        ваші гроші&lt;/h4&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;div class=&quot;rounded-box&quot;&gt;</p>
+
+                    <p>&lt;h5&gt;Ми можемо це розробити:&lt;/h5&gt;</p>
+
+                    <p>&lt;ul&gt;</p>
+
+                    <p>&lt;li&gt;Дизайн&lt;/li&gt;</p>
+
+                    <p>&lt;li&gt;Мобільні додатки&lt;/li&gt;</p>
+
+                    <p>&lt;li&gt;Web сайти&lt;/li&gt;</p>
+
+                    <p>&lt;li&gt;Мобільні Ігри&lt;/li&gt;</p>
+
+                    <p>&lt;/ul&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;div class=&quot;rounded-box&quot;&gt;</p>
+
+                    <p>&lt;h5&gt;Алгоритм співпраці з нами:&lt;/h5&gt;</p>
+
+                    <p>&lt;ol&gt;</p>
+
+                    <p>&lt;li&gt;Заповніть поля нижще для того щоб з вами
+                        звʼязався наш помічник&lt;/li&gt;</p>
+
+                    <p>&lt;li&gt;Зʼясовуємо проблему:</p>
+
+                    <p>&lt;ul&gt;</p>
+
+                    <p>&lt;li&gt;Мета ПЗ&lt;/li&gt;</p>
+
+                    <p>&lt;li&gt;Терміни виконання&lt;/li&gt;</p>
+
+                    <p>&lt;/ul&gt;</p>
+
+                    <p>&lt;/li&gt;</p>
+
+                    <p>&lt;li&gt;Реалізація&lt;/li&gt;</p>
+
+                    <p>&lt;li&gt;Віддаємо готовий продукт&lt;/li&gt;</p>
+
+                    <p>&lt;/ol&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&lt;h4&gt;Ціни та терміни виконання:&lt;/h4&gt;</p>
+
+                    <p>&lt;table&gt;</p>
+
+                    <p>&lt;thead&gt;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;th&gt;Тип задачі&lt;/th&gt;</p>
+
+                    <p>&lt;th&gt;Ціна&lt;/th&gt;</p>
+
+                    <p>&lt;th&gt;Терміни&lt;/th&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&lt;/thead&gt;</p>
+
+                    <p>&lt;tbody&gt;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td&gt;Дизайн&lt;/td&gt;</p>
+
+                    <p>&lt;td&gt;Від 50$&lt;/td&gt;</p>
+
+                    <p>&lt;td&gt;Від 3 днів&lt;/td&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td&gt;Мобільний додаток&lt;/td&gt;</p>
+
+                    <p>&lt;td&gt;Від 500$&lt;/td&gt;</p>
+
+                    <p>&lt;td&gt;Від 10 днів&lt;/td&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td&gt;WEB сайт&lt;/td&gt;</p>
+
+                    <p>&lt;td&gt;Від 300$&lt;/td&gt;</p>
+
+                    <p>&lt;td&gt;Від 15 днів&lt;/td&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td&gt;Мобільні ігри&lt;/td&gt;</p>
+
+                    <p>&lt;td&gt;Від 600$&lt;/td&gt;</p>
+
+                    <p>&lt;td&gt;Від 20 днів&lt;/td&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&lt;/tbody&gt;</p>
+
+                    <p>&lt;/table&gt;</p>
+
+                    <p>&lt;h4&gt;Зворотній звʼязок&lt;/h4&gt;</p>
+
+                    <p>&lt;input type=&quot;text&quot; name=&quot;name&quot;
+                        value=&quot;Імʼя&quot;&gt;</p>
+
+                    <p>&lt;br&gt;</p>
+
+                    <p>&lt;input type=&quot;text&quot;
+                        name=&quot;phoneNumber&quot; value=&quot;Номер
+                        телефону&quot;&gt;</p>
+
+                    <p>&lt;br&gt;</p>
+
+                    <p>&lt;button&gt;Зателефонувати&lt;br&gt;мені&lt;/button&gt;</p>
+                    <p>&lt;/body&gt;</p>
+
+                    <p>&lt;footer&gt;</p>
+
+                    <p>&lt;a href=&quot;main.html&quot;&gt;Опис функціоналу
+                        застосунку&lt;/a&gt;</p>
+
+                    <p>&lt;h5 id=&quot;customh&quot;&gt;Наші соціальні
+                        мережі:&lt;/h5&gt;</p>
+
+                    <p>&lt;ul&gt;</p>
+
+                    <p>&lt;li&gt; &lt;a
+                        href=&quot;https://www.google.com.ua&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;</p>
+                    <p>&lt;li&gt; &lt;a href=&quot;#&quot;&gt;Twitter
+                        &lt;/a&gt;&lt;/li&gt;</p>
+
+                    <p>&lt;/ul&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;/footer&gt;</p>
+
+                    <p>&lt;/html&gt;</p>
+
+                </div>
+
+                <div id="fixtable" hidden>
+                    <h4>Фіксована таблична верстка</h4>
+                    <h3>Код:</h3>
+                    <p>&lt;table class=&quot;fix-table shadowed&quot;&gt;</p>
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td rowspan=&quot;3&quot;
+                        style=&quot;background-color:
+                        white;&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;td class=&quot;fixed-start-end&quot;
+                        colspan=&quot;3&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;td rowspan=&quot;3&quot;
+                        style=&quot;background-color:
+                        white;&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td class=&quot;fixed-middle&quot;&gt;&lt;/td&gt;</p>
+                    <p>&lt;td class=&quot;fixed-middle&quot; style=&quot;width:
+                        150px; background-color:</p>
+
+                    <p>white;&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;td class=&quot;fixed-middle&quot;&gt;&lt;/td&gt;</p>
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td class=&quot;fixed-start-end&quot;
+                        colspan=&quot;3&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&lt;/table&gt;</p>
+                    <img class="scheme-image" src="images/fixtable.png" alt="">
+                </div>
+
+                <div id="flextable" hidden>
+                    <h4>Гумова таблична верстка</h4>
+                    <h3>Код:</h3>
+                    <p>&lt;table class=&quot;flex-table shadowed&quot;&gt;</p>
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td rowspan=&quot;3&quot;
+                        style=&quot;background-color:
+                        white;&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;td class=&quot;flex-start-end&quot;
+                        colspan=&quot;3&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;td rowspan=&quot;3&quot;
+                        style=&quot;background-color:
+                        white;&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td class=&quot;flex-middle&quot;&gt;&lt;/td&gt;</p>
+                    <p>&lt;td class=&quot;flex-middle&quot;
+                        style=&quot;background-color:</p>
+
+                    <p>white;&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;td class=&quot;flex-middle&quot;&gt;&lt;/td&gt;</p>
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;tr&gt;</p>
+
+                    <p>&lt;td class=&quot;flex-start-end&quot;
+                        colspan=&quot;3&quot;&gt;&lt;/td&gt;</p>
+
+                    <p>&lt;/tr&gt;</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>&lt;/table&gt;</p>
+
+                    <img class="scheme-image" src="images/flextable.png" alt="">
+                </div>
+
+                <div id="fixblock" hidden>
+                    <h4>Фіксована блокова верстка</h4>
+                    <h3>Код:</h3>
+                    <p>&lt;div class=&quot;horizontal-block bordered&quot;
+                        style=&quot;height: 400px; width:</p>
+
+                    <p>300px;&quot;&gt;</p>
+
+                    <p>&lt;div class=&quot;sideFixBlock&quot; style=&quot;</p>
+                    <p>height: 400px;</p>
+
+                    <p>box-shadow: -2px 4px black inset, 4px -4px black inset;</p>
+                    <p>&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;vertical-block&quot;
+                        style=&quot;height: 400px; width: 200px;&quot;&gt;</p>
+                    <p>&lt;div style=&quot;width: 200px; height: 50px;</p>
+
+                    <p>background-color: blue;</p>
+
+                    <p>box-shadow: 2px 4px black inset, -2px -2px black
+                        inset&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;horizontal-block&quot;
+                        style=&quot;width: 100%; height: 300px;</p>
+
+                    <p>background-color: blueviolet;&quot;&gt;</p>
+
+                    <p>&lt;div class=&quot;bordered&quot; style=&quot;width:
+                        50px; height: 300px;</p>
+
+                    <p>background-color: orange;&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;vertical-block&quot;
+                        style=&quot;width: 150px; height:</p>
+
+                    <p>300px;&quot;&gt;</p>
+
+                    <p>&lt;div class=&quot;bordered&quot; style=&quot;width:
+                        150px; height: 50px;</p>
+
+                    <p>background-color: orange;&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;bordered&quot; style=&quot;width:
+                        150px; height:</p>
+
+                    <p>250px; background-color: white;&quot;&gt;&lt;/div&gt;</p>
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&lt;div style=&quot;width: 200px; height: 50px;</p>
+
+                    <p>background-color: blue;</p>
+
+                    <p>box-shadow: 2px 2px black inset, -2px -4px black inset;</p>
+                    <p>&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;sideFixBlock&quot; style=&quot;</p>
+                    <p>height: 400px;</p>
+
+                    <p>box-shadow: -4px 4px black inset, 2px -4px black inset;</p>
+                    <p>&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <img class="scheme-image" src="images/fixblock.png" alt="">
+                </div>
+
+                <div id="flexblock" hidden>
+                    <h4>Гумова блокова верстка</h4>
+                    <h3>Код:</h3>
+                    <p>&lt;div class=&quot;horizontal-block&quot;
+                        style=&quot;height: 400px; width: 70%;&quot;&gt;</p>
+
+                    <p>&lt;div class=&quot;flex-sides-block&quot; style=&quot;</p>
+                    <p>box-shadow: -2px 4px black inset, 4px -4px black inset;</p>
+                    <p>&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;vertical-block&quot;
+                        style=&quot;height: 100%; width: 80%;&quot;&gt;</p>
+
+                    <p>&lt;div class=&quot;flex-top-bottom bordered&quot;
+                        style=&quot;box-shadow: 2px 4px black inset, -2px -2px
+                        black inset&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;horizontal-block&quot;
+                        style=&quot;width: 100%; height: 80%;</p>
+
+                    <p>background-color: blueviolet;&quot;&gt;</p>
+
+                    <p>&lt;div class=&quot;bordered&quot; style=&quot;width:
+                        10%; height: 100%;</p>
+
+                    <p>background-color: orange;&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;vertical-block&quot;
+                        style=&quot;width: 90%; height:</p>
+
+                    <p>100%;&quot;&gt;</p>
+
+                    <p>&lt;div class=&quot;bordered&quot; style=&quot;width:
+                        100%; height: 20%;</p>
+
+                    <p>background-color: orange;&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;bordered&quot; style=&quot;width:
+                        100%; height: 80%;</p>
+
+                    <p>background-color: white;&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;flex-top-bottom&quot;
+                        style=&quot;box-shadow: 2px 2px black inset, -2px -4px
+                        black inset;&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <p>&lt;div class=&quot;flex-sides-block&quot; style=&quot;</p>
+                    <p>box-shadow: -4px 4px black inset, 2px -4px black inset;</p>
+                    <p>&quot;&gt;&lt;/div&gt;</p>
+
+                    <p>&lt;/div&gt;</p>
+
+                    <img class="scheme-image" src="images/flexblock.png" alt="">
+                </div>
+
+                <div id="scrnpagetask3" hidden>
+                    <h3>Скріншот сторінки:</h3>
+                    <img class="scheme-image" src="images/task3image1.png" alt="">
+                    <img class="scheme-image" src="images/task3image2.png" alt="">
+                </div>
+
+                <div id="htmlcodetask3" hidden>
+                    <h4>HTML-код</h4>
+                    &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;/head&gt; &lt;body&gt; &lt;main&gt; &lt;p class=&quot;student-information&quot;&gt;Колесник Тарас&lt;br&gt;Варіант 7&lt;/p&gt; &lt;div class=&quot;navbar&quot;&gt; &lt;a href=&quot;#home&quot;&gt;Форми навчання&lt;/a&gt; &lt;a href=&quot;#news&quot;&gt;Заходи&lt;/a&gt; &lt;a href=&quot;#news&quot;&gt;Про академію&lt;/a&gt; &lt;a href=&quot;#news&quot;&gt;Контакти&lt;/a&gt; &lt;div class=&quot;dropdown&quot;&gt; &lt;button class=&quot;dropbtn&quot;&gt;Київ ▼&lt;/button&gt; &lt;div class=&quot;dropdown-content&quot;&gt; &lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt; &lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;section1 margin-50&quot;&gt; &lt;p class=&quot;title&quot;&gt;&lt;b&gt;ПРОГРАММА КУРСУ&lt;/b&gt;&lt;/p&gt; &lt;p class=&quot;subtitle&quot;&gt;&lt;b&gt;REACT&lt;/b&gt;&lt;/p&gt; &lt;div class=&quot;flex&quot;&gt; &lt;div class=&quot;container1&quot;&gt; &lt;img class=&quot;hours-icon&quot; src=&quot;images/hours-icon.png&quot;&gt; &lt;div class=&quot;caption&quot;&gt;&lt;b&gt;ОПАНУЙ REACT ЗА 20&lt;br&gt;ЗАНЯТЬ&lt;/b&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;container2&quot;&gt; &lt;ol class=&quot;list&quot;&gt; &lt;li&gt;&lt;b&gt;ВСТАНОВЛЕННЯ REACT&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;КЛАСОВІ КОМПОНЕНТИ&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;STATE &amp; PROPS&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;DATA FORWARDING &amp;&lt;br&gt;PROPS DRILLING&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;LIFECYCLE HOOKS&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;ФУНКЦІОНАЛЬНІ&lt;br&gt;КОМПОНЕНТИ&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;ROUTING&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;HOOKS&lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;REDUX&lt;/b&gt;&lt;/li&gt; &lt;/ol&gt; &lt;/div&gt; &lt;div class=&quot;container3&quot;&gt; &lt;img class=&quot;text-icon&quot; src=&quot;images/text-icon.png&quot;&gt; &lt;/div&gt; &lt;button class=&quot;button&quot;&gt;&lt;b&gt;Записатись на курс&lt;/b&gt;&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;section2&quot;&gt; &lt;img class=&quot;section-bg&quot; src=&quot;images/section-bg.png&quot;&gt; &lt;p class=&quot;section2-title&quot;&gt;&lt;b&gt;СТАЦІОНАР&lt;/b&gt;&lt;/p&gt; &lt;div class=&quot;flex-2&quot;&gt; &lt;div class=&quot;card&quot;&gt; &lt;p class=&quot;card-title&quot;&gt;&lt;b&gt;MINIMAL&lt;/b&gt;&lt;/p&gt; &lt;ul class=&quot;card-list&quot;&gt; &lt;li&gt;40 годин&lt;/li&gt; &lt;li&gt;2 місяців&lt;/li&gt; &lt;li&gt;12 годин в тиждень&lt;/li&gt; &lt;li&gt;Розтермінування до 24 міс.&lt;/li&gt; &lt;li class=&quot;disabled&quot;&gt;Безкоштовне повторне&lt;br&gt;проходження курсу&lt;/li&gt; &lt;li class=&quot;disabled&quot;&gt;Особистий ментор&lt;/li&gt; &lt;/ul&gt; &lt;p class=&quot;price1&quot;&gt;&lt;b&gt;17 000 грн&lt;/b&gt;&lt;/p&gt; &lt;p class=&quot;price2&quot;&gt;&lt;b&gt;8 500 грн&lt;/b&gt;&lt;/p&gt; &lt;div class=&quot;card-line&quot;&gt;&lt;/div&gt; &lt;p class=&quot;free-places&quot;&gt;&lt;b&gt;3 вільних місць&lt;/b&gt;&lt;/p&gt; &lt;button class=&quot;button card-button&quot;&gt;&lt;b&gt;Записатись на курс&lt;/b&gt;&lt;/button&gt; &lt;/div&gt; &lt;div class=&quot;card&quot;&gt; &lt;p class=&quot;card-title&quot;&gt;&lt;b&gt;PRO&lt;/b&gt;&lt;/p&gt; &lt;ul class=&quot;card-list&quot;&gt; &lt;li&gt;40 годин&lt;/li&gt; &lt;li&gt;2 місяців&lt;/li&gt; &lt;li&gt;12 годин в тиждень&lt;/li&gt; &lt;li&gt;Розтермінування до 24 міс.&lt;/li&gt; &lt;li&gt;Безкоштовне повторне&lt;br&gt;проходження курсу&lt;/li&gt; &lt;li&gt;Особистий ментор&lt;/li&gt; &lt;/ul&gt; &lt;p class=&quot;price1&quot;&gt;&lt;b&gt;25 000 грн&lt;/b&gt;&lt;/p&gt; &lt;p class=&quot;price2&quot;&gt;&lt;b&gt;12 500 грн&lt;/b&gt;&lt;/p&gt; &lt;div class=&quot;card-line&quot;&gt;&lt;/div&gt; &lt;p class=&quot;free-places&quot;&gt;&lt;b&gt;3 вільних місць&lt;/b&gt;&lt;/p&gt; &lt;button class=&quot;button card-button&quot;&gt;&lt;b&gt;Записатись на курс&lt;/b&gt;&lt;/button&gt; &lt;/div&gt; &lt;div class=&quot;card&quot;&gt; &lt;p class=&quot;card-title&quot;&gt;&lt;b&gt;ІНДИВІДУАЛЬНО&lt;/b&gt;&lt;/p&gt; &lt;div class=&quot;card-info&quot;&gt;Об'єм, навантаження, тривалість&lt;br&gt;визначаються індивідуально для&lt;br&gt;кожного студента його персональним&lt;br&gt;ментором.&lt;/div&gt; &lt;p class=&quot;price1&quot;&gt;&lt;b&gt;100 000 грн&lt;/b&gt;&lt;/p&gt; &lt;p class=&quot;price2&quot;&gt;&lt;b&gt;51 000 грн&lt;/b&gt;&lt;/p&gt; &lt;div class=&quot;card-line&quot;&gt;&lt;/div&gt; &lt;p class=&quot;free-places&quot;&gt;&lt;b&gt;1 вільне місць&lt;/b&gt;&lt;/p&gt; &lt;button class=&quot;button card-button&quot;&gt;&lt;b&gt;Записатись на курс&lt;/b&gt;&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;section3 margin-50&quot;&gt; &lt;div class=&quot;wrappers wrapper1&quot;&gt; &lt;div class=&quot;inner-container1&quot;&gt; &lt;div class=&quot;caption1&quot;&gt;&lt;b&gt;НАВЧАЙСЯ ЗАРАЗ&lt;/b&gt;&lt;/div&gt; &lt;div class=&quot;caption2&quot;&gt;&lt;b&gt;СПЛАЧУЙ ПОТІМ&lt;/b&gt;&lt;/div&gt; &lt;div class=&quot;caption3&quot;&gt;розтермінування платежів до 24 місяців.&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;inner-container2&quot;&gt; &lt;button class=&quot;button button3&quot;&gt;&lt;b&gt;Дізнатись деталі&lt;/b&gt;&lt;/button&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;wrappers wrapper2&quot;&gt; &lt;div class=&quot;container4&quot;&gt; &lt;div class=&quot;description1&quot;&gt;&lt;b&gt;QA/QC&lt;/b&gt;&lt;/div&gt; &lt;div class=&quot;description2&quot;&gt;&lt;b&gt;КОМПЛЕКСНИЙ КУРС&lt;br&gt;ТЕСТУВАННЯ QA&lt;/b&gt;&lt;/div&gt; &lt;div class=&quot;description3&quot;&gt;&lt;b&gt;Такого крутого тестування ще не було!&lt;/b&gt;&lt;/div&gt; &lt;div class=&quot;description4&quot;&gt;Найбільший та найкращий курс тестування в Україні. Гарантія&lt;br&gt;працевлаштування. Найбільший набір технологій.&lt;/div&gt; &lt;button class=&quot;button button4&quot;&gt;&lt;b&gt;Забронювати місце&lt;/b&gt;&lt;/button&gt; &lt;/div&gt; &lt;div class=&quot;container5&quot;&gt; &lt;img class=&quot;man-icon&quot; src=&quot;images/man.png&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/main&gt; &lt;/body&gt; &lt;/html&gt;
+                </div>
+
+                <div id="csscodetask3" hidden>
+                    <h4>CSS-код</h4>
+                    &lt;style&gt; body { font-family: Arial; padding-left: 175px; padding-right: 175px; } .flex { display: flex; flex-direction: row; justify-content: space-between; } .margin-50 { margin-top: 50px; } .student-information { width: 100%; text-align: center; font-size: 20px; } .navbar { display: flex; flex-direction: row; width: 100%; justify-content: space-between; } .navbar a { font-size: 16px; color: white; text-align: center; padding: 14px 16px; text-decoration: none; background: black; width: 140px; } .dropdown .dropbtn { background: black; font-size: 16px; border: none; outline: none; color: white; padding: 14px 16px; margin: 0; width: 140px; } .navbar a:hover, .dropdown:hover .dropbtn { background-color: #1da2e9; } .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; } .dropdown-content a { color: white; padding: 12px 16px; text-decoration: none; display: block; text-align: left; } .dropdown-content a:hover { background-color: #1da2e9; } .dropdown:hover .dropdown-content { display: block; } .section1 { height: 555px; width: 100%; } .title { text-align: center; color: #f3984f; margin-bottom: 0; } .container1 { width: 40%; } .container2 { width: 40%; } .container3 { width: 20%; } .hours-icon { width: 250px; height: 250px; } .text-icon { width: 250px; height: 250px; margin-left: 89px; } .caption .title { width: 100%; text-align: center; color: #f3984f; margin-bottom: 0; } .subtitle { width: 100%; text-align: center; margin-top: 0; } .number { color: #f3984f; font-size: 200px; } .list li { margin-bottom: 20px; } .list { list-style-type: none; counter-reset: item; } .list li:nth-child(-n+9)::before { content: '0' counter(item); counter-increment: item; font-weight: bold; margin-right: 9px; margin-left: -25px; position: absolute; transform: rotate(-90deg); color: #c8c8c8; } .list li:nth-child(1)::before { color: #1da2e9; } .button { width: 200px; height: 40px; background: #ffeb00; color: black; outline: none; border: none; margin-top: 400px; border-radius: 5px; } .section2 { height: 560px; width: 100%; background: #1da2e9; border-top: 1px solid #000000; } .section-bg { width: 200px; height: 36px; margin: -3px 0 0 -2px; } .section2-title { margin-top: -30px; margin-left: 10px; } .card { width: 250px; height: 465px; background: #ffffff; border-radius: 5px; } .flex-2 { display: flex; flex-direction: row; justify-content: space-around; margin-top: 25px; } .card-title { width: 100%; text-align: center; font-size: 13px; } .card-list { height: 187px; margin-top: 20px; margin-left: -7px; } ul.card-list li { margin-bottom: 10px; padding-left: 20px; list-style: none; background-image: url(images/confirmed.png); background-repeat: no-repeat; background-size: 10px; } .disabled { opacity: 0.1; } ul.card-list li.disabled { padding-left: 20px; list-style: none; background-image: url(images/notconfirmed.png); background-repeat: no-repeat; background-size: 10px; } .price1 { color: #1da2e9; font-size: 20px; text-align: center; margin-top: 27px; text-decoration: line-through; text-decoration-color: red; text-decoration-style: solid; text-decoration-thickness: 3px; } .price2 { color: #1da2e9; font-size: 20px; text-align: center; margin-top: 20px; } .card-line { width: 200px; height: 1px; background: #e5e5e5; margin-left: 25px; } .free-places { color: #1da2e9; font-size: 10px; text-align: center; margin-top: 20px; } .card-button { margin-top: 18px; margin-left: 25px; } .card-info { height: 187px; font-size: 13px; margin-left: 12px; } .section3 { height: 508px; background: #fff; overflow: hidden; } .wrappers { width: 100%; } .wrapper1 { height: 100px; background: #1da2e9; border-bottom: 3px solid #ffffff; display: flex; flex-direction: row; } .wrapper2 { height: 405px; border-top: 1px solid #1da2e9; display: flex; flex-direction: row; } .inner-container1 { display: flex; flex-direction: column; width: 70%; height: 100%; } .inner-container2 { width: 30%; height: 100%; } .caption1 { color: #ffffff; font-size: 15px; margin: 15px 0 0 15px; } .caption2 { color: #000000; font-size: 20px; margin: 5px 0 0 15px; } .caption3 { color: #ffffff; font-size: 10px; margin: 10px 0 0 15px; } .button3 { margin-top: 36px; } .container4 { display: flex; flex-direction: column; width: 80%; height: 100%; } .container5 { width: 20%; height: 100%; background: #1da2e9; } .description1 { color: #f2f2f2; font-size: 216px; margin-left: -70px; } .description2 { color: #f3984f; margin-top: -103px; } .description3 { margin-top: 35px; } .description4 { font-size: 10px; margin-top: 23px; } .button4 { margin-top: 40px; background: #1da2e9; } .man-icon { width: 310px; height: 310px; margin-left: -130px; margin-top: 95px; } &lt;/style&gt;
+                </div>
+
+
+                <div id="report" hidden>
+                    <h3>Висновки</h3>
+
+                    <p>Виконавши лабораторну роботу, ми придбали практичні навички роботи верстки сторінок засобами CSS, верстки на
+                        основі плаваючих елементів, засобами CSS та FLEXBOX</p>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+</html>

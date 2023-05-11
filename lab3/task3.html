@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>task 3</title>
+        <style>
+        body {
+            font-family: Arial;
+            padding-left: 175px;
+            padding-right: 175px;
+        }
+        
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .margin-50 {
+            margin-top: 50px;
+        }
+        
+        .student-information {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+        
+        .navbar a {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background: black;
+            width: 140px;
+        }
+        
+        .dropdown .dropbtn {
+            background: black;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            margin: 0;
+            width: 140px;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #1da2e9;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
+        
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #1da2e9;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .section1 {
+            height: 555px;
+            width: 100%;
+        }
+        
+        .title {
+            text-align: center;
+            color: #f3984f;
+            margin-bottom: 0;
+        }
+        
+        .container1 {
+            width: 40%;
+        }
+        
+        .container2 {
+            width: 40%;
+        }
+        
+        .container3 {
+            width: 20%;
+        }
+        
+        .hours-icon {
+            width: 250px;
+            height: 250px;
+        }
+        
+        .text-icon {
+            width: 250px;
+            height: 250px;
+            margin-left: 89px;
+        }
+        
+        .caption .title {
+            width: 100%;
+            text-align: center;
+            color: #f3984f;
+            margin-bottom: 0;
+        }
+        
+        .subtitle {
+            width: 100%;
+            text-align: center;
+            margin-top: 0;
+        }
+        
+        .number {
+            color: #f3984f;
+            font-size: 200px;
+        }
+        
+        .list li {
+            margin-bottom: 20px;
+        }
+        
+        .list {
+            list-style-type: none;
+            counter-reset: item;
+        }
+        
+        .list li:nth-child(-n+9)::before {
+            content: '0' counter(item);
+            counter-increment: item;
+            font-weight: bold;
+            margin-right: 9px;
+            margin-left: -25px;
+            position: absolute;
+            transform: rotate(-90deg);
+            color: #c8c8c8;
+        }
+        
+        .list li:nth-child(1)::before {
+            color: #1da2e9;
+        }
+        
+        .button {
+            width: 200px;
+            height: 40px;
+            background: #ffeb00;
+            color: black;
+            outline: none;
+            border: none;
+            margin-top: 400px;
+            border-radius: 5px;
+        }
+        
+        .section2 {
+            height: 560px;
+            width: 100%;
+            background: #1da2e9;
+            border-top: 1px solid #000000;
+        }
+        
+        .section-bg {
+            width: 200px;
+            height: 36px;
+            margin: -3px 0 0 -2px;
+        }
+        
+        .section2-title {
+            margin-top: -30px;
+            margin-left: 10px;
+        }
+        
+        .card {
+            width: 250px;
+            height: 465px;
+            background: #ffffff;
+            border-radius: 5px;
+        }
+        
+        .flex-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 25px;
+        }
+        
+        .card-title {
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+        }
+        
+        .card-list {
+            height: 187px;
+            margin-top: 20px;
+            margin-left: -7px;
+        }
+
+        ul.card-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+	        list-style: none;
+	        background-image: url(images/confirmed.png);
+	        background-repeat: no-repeat;
+	        background-size: 10px;
+        }
+
+    
+        .disabled {
+            opacity: 0.1;
+        }
+
+        ul.card-list li.disabled {
+            padding-left: 20px;
+	        list-style: none;
+	        background-image: url(images/notconfirmed.png);
+	        background-repeat: no-repeat;
+	        background-size: 10px;
+        }
+        
+         .price1 {
+            color: #1da2e9;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 27px;
+            text-decoration: line-through;
+            text-decoration-color: red;
+            text-decoration-style: solid;
+            text-decoration-thickness: 3px;
+        }
+        .price2 {
+            color: #1da2e9;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card-line {
+            width: 200px;
+            height: 1px;
+            background: #e5e5e5;
+            margin-left: 25px;
+        }
+        
+        .free-places {
+            color: #1da2e9;
+            font-size: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .card-button {
+            margin-top: 18px;
+            margin-left: 25px;
+        }
+        
+        .card-info {
+            height: 187px;
+            font-size: 13px;
+            margin-left: 12px;
+        }
+        
+        .section3 {
+            height: 508px;
+            background: #fff;
+            overflow: hidden;
+        }
+        
+        .wrappers {
+            width: 100%;
+        }
+        
+        .wrapper1 {
+            height: 100px;
+            background: #1da2e9;
+            border-bottom: 3px solid #ffffff;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .wrapper2 {
+            height: 405px;
+            border-top: 1px solid #1da2e9;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .inner-container1 {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 100%;
+        }
+        
+        .inner-container2 {
+            width: 30%;
+            height: 100%;
+        }
+        
+        .caption1 {
+            color: #ffffff;
+            font-size: 15px;
+            margin: 15px 0 0 15px;
+        }
+        
+        .caption2 {
+            color: #000000;
+            font-size: 20px;
+            margin: 5px 0 0 15px;
+        }
+        
+        .caption3 {
+            color: #ffffff;
+            font-size: 10px;
+            margin: 10px 0 0 15px;
+        }
+        
+        .button3 {
+            margin-top: 36px;
+        }
+        
+        .container4 {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 100%;
+        }
+        
+        .container5 {
+            width: 20%;
+            height: 100%;
+            background: #1da2e9;
+        }
+        
+        .description1 {
+            color: #f2f2f2;
+            font-size: 216px;
+            margin-left: -70px;
+        }
+        
+        .description2 {
+            color: #f3984f;
+            margin-top: -103px;
+        }
+        
+        .description3 {
+            margin-top: 35px;
+        }
+        
+        .description4 {
+            font-size: 10px;
+            margin-top: 23px;
+        }
+        
+        .button4 {
+            margin-top: 40px;
+            background: #1da2e9;
+        }
+        
+        .man-icon {
+            width: 310px;
+            height: 310px;
+            margin-left: -130px;
+            margin-top: 95px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <main>
+            <p class="student-information">Колесник Тарас<br>Варіант 7</p>
+
+            <div class="navbar">
+                <a href="#home">Форми навчання</a>
+                <a href="#news">Заходи</a>
+                <a href="#news">Про академію</a>
+                <a href="#news">Контакти</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Київ ▼</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section1 margin-50">
+                <p class="title"><b>ПРОГРАММА КУРСУ</b></p>
+                <p class="subtitle"><b>REACT</b></p>
+                <div class="flex">
+                    <div class="container1">
+                        <img class="hours-icon" src="images/hours-icon.png">
+                        <div class="caption"><b>ОПАНУЙ REACT ЗА 20<br>ЗАНЯТЬ</b></div>
+                    </div>
+                    <div class="container2">
+                        <ol class="list">
+                            <li><b>ВСТАНОВЛЕННЯ REACT</b></li>
+                            <li><b>КЛАСОВІ КОМПОНЕНТИ</b></li>
+                            <li><b>STATE & PROPS</b></li>
+                            <li><b>DATA FORWARDING &<br>PROPS DRILLING</b></li>
+                            <li><b>LIFECYCLE HOOKS</b></li>
+                            <li><b>ФУНКЦІОНАЛЬНІ<br>КОМПОНЕНТИ</b></li>
+                            <li><b>ROUTING</b></li>
+                            <li><b>HOOKS</b></li>
+                            <li><b>REDUX</b></li>
+                        </ol>
+                    </div>
+                    <div class="container3">
+                        <img class="text-icon" src="images/text-icon.png">
+                    </div>
+                    <button class="button"><b>Записатись на курс</b></button>
+                </div>
+            </div>
+
+            <div class="section2">
+                <img class="section-bg" src="images/section-bg.png">
+                <p class="section2-title"><b>СТАЦІОНАР</b></p>
+                <div class="flex-2">
+                    <div class="card">
+                        <p class="card-title"><b>MINIMAL</b></p>
+                        <ul class="card-list">
+                            <li>40 годин</li>
+                            <li>2 місяців</li>
+                            <li>12 годин в тиждень</li>
+                            <li>Розтермінування до 24 міс.</li>
+                            <li class="disabled">Безкоштовне повторне<br>проходження
+                                курсу</li>
+                            <li class="disabled">Особистий ментор</li>
+                        </ul>
+                        <p class="price1"><b>17 000 грн</b></p>
+                        <p class="price2"><b>8 500 грн</b></p>
+                        <div class="card-line"></div>
+                        <p class="free-places"><b>3 вільних місць</b></p>
+                        <button class="button card-button"><b>Записатись на курс</b></button>
+                    </div>
+                    <div class="card">
+                        <p class="card-title"><b>PRO</b></p>
+                        <ul class="card-list">
+                            <li>40 годин</li>
+                            <li>2 місяців</li>
+                            <li>12 годин в тиждень</li>
+                            <li>Розтермінування до 24 міс.</li>
+                            <li>Безкоштовне повторне<br>проходження курсу</li>
+                            <li>Особистий ментор</li>
+                        </ul>
+                        <p class="price1"><b>25 000 грн</b></p>
+                        <p class="price2"><b>12 500 грн</b></p>
+                        <div class="card-line"></div>
+                        <p class="free-places"><b>3 вільних місць</b></p>
+                        <button class="button card-button"><b>Записатись на курс</b></button>
+                    </div>
+                    <div class="card">
+                        <p class="card-title"><b>ІНДИВІДУАЛЬНО</b></p>
+                        <div class="card-info">Об'єм, навантаження, тривалість<br>визначаються
+                            індивідуально для<br>кожного студента його
+                            персональним<br>ментором.</div>
+                        <p class="price1"><b>100 000 грн</b></p>
+                        <p class="price2"><b>51 000 грн</b></p>
+                        <div class="card-line"></div>
+                        <p class="free-places"><b>1 вільне місць</b></p>
+                        <button class="button card-button"><b>Записатись на курс</b></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section3 margin-50">
+                <div class="wrappers wrapper1">
+                    <div class="inner-container1">
+                        <div class="caption1"><b>НАВЧАЙСЯ ЗАРАЗ</b></div>
+                        <div class="caption2"><b>СПЛАЧУЙ ПОТІМ</b></div>
+                        <div class="caption3">розтермінування платежів до 24
+                            місяців.</div>
+                    </div>
+                    <div class="inner-container2">
+                        <button class="button button3"><b>Дізнатись деталі</b></button>
+                    </div>
+                </div>
+                <div class="wrappers wrapper2">
+                    <div class="container4">
+                        <div class="description1"><b>QA/QC</b></div>
+                        <div class="description2"><b>КОМПЛЕКСНИЙ КУРС<br>ТЕСТУВАННЯ
+                                QA</b></div>
+                        <div class="description3"><b>Такого крутого тестування
+                                ще не було!</b></div>
+                        <div class="description4">Найбільший та найкращий курс
+                            тестування в Україні. Гарантія<br>працевлаштування.
+                            Найбільший набір технологій.</div>
+                        <button class="button button4"><b>Забронювати місце</b></button>
+                    </div>
+                    <div class="container5">
+                        <img class="man-icon" src="images/man.png">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </body>
+
+</html>

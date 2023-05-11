@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Звіти</title>
+        <meta charset="UTF-8">
+        <style>
+        .container {
+            background: linear-gradient(0deg, rgba(255,251,199,1) 0%, rgba(0,78,76,1) 100%);
+            border-radius: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+        }
+
+        .left {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+
+        .right {
+            width: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: row; */
+            /* align-items: center;
+            justify-content: center; */
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .title {
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .imageCart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 33%;
+        }
+
+        .labNumber {
+            background-color: lightblue;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: stretch;
+            margin-top: 10px;
+        }
+
+        .labNumber button {
+            flex: 1;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color:lightslategray
+
+        }
+        .lab-data {
+            background-color: lightblue;
+            border-radius: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            align-items: self-start;
+        }
+
+        .labDataLeft {
+            background-color: rgb(79, 149, 148);
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        .labDataRight {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 240, 186);
+            flex-direction: column;
+            border-radius: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .labDataLeft button {
+            margin: 10px;
+            height: 50px;
+            border-radius: 10px;
+            background-color:bisque
+        }
+        .scheme-image {
+            width: 80%;
+            height: 40%;
+        }
+
+        body {
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ" ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND та BACKEND РОЗРОБОК"</h1>
+                <h4>Бригада N22</h4>
+            </div>
+            <div class="right">
+                <div class="imageCart">
+                    <img class="image" src="images/taras.jpg">
+                    <h2 class="title">Колесник<br>Тарас</h2>
+                </div>
+                <div class="imageCart">
+                    <img class="image" src="images/natalia.jpg">
+                    <h2 class="title">Чала<br>Наталія</h2>
+                </div>
+                <div class="imageCart">
+                    <img class="image" src="images/mykhailo.jpg">
+                    <h2 class="title">Ільницький<br>Михайло</h2>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="labNumber">
+            <button onclick="window.location.href = 'report1.html'">
+              Lab 1
+            </button>
+            <button onclick="window.location.href = 'report2.html'">
+              Lab 2
+            </button> 
+            <button onclick="window.location.href= 'report3.html'">
+              Lab 3
+            </button>
+            <button>Lab 4</button>
+            <button>Lab 5</button>
+            <button>Lab 6</button>
+            <button>Lab 7</button>
+            <button>Lab 8</button>
+            <button>Lab 9</button>
+        </div>
+
+        <div class="lab-data">
+            <div class="labDataLeft">
+                <button onclick="
+                    temaContainer.hidden= false
+                    descrContainer.hidden= true
+                    codeContainer.hidden= true
+                    imgContainer.hidden= true
+                    reportContainer.hidden= true
+                    devContainer.hidden= true
+                    ">Тема, мета ЛР N1 місце розташування сайту, звіту</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    descrContainer.hidden= false
+                    codeContainer.hidden= true
+                    imgContainer.hidden= true
+                    reportContainer.hidden= true
+                    devContainer.hidden= true
+                    ">Опис предметного середовища</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    descrContainer.hidden= true
+                    codeContainer.hidden= false
+                    imgContainer.hidden= true
+                    reportContainer.hidden= true
+                    devContainer.hidden= true
+                    ">HTML-код головної сторінки</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    descrContainer.hidden= true
+                    codeContainer.hidden= true
+                    imgContainer.hidden= false
+                    reportContainer.hidden= true
+                    devContainer.hidden= true
+                    ">Зовнішній вигляд головної сторінки WEB-застосунку</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    descrContainer.hidden= true
+                    codeContainer.hidden= true
+                    imgContainer.hidden= true
+                    reportContainer.hidden= false
+                    devContainer.hidden= true
+                    ">Висновки до ЛР N1</button>
+                <button onclick="
+                    temaContainer.hidden= true
+                    descrContainer.hidden= true
+                    codeContainer.hidden= true
+                    imgContainer.hidden= true
+                    reportContainer.hidden= true
+                    devContainer.hidden= false
+                    ">Виконавці</button>
+            </div>
+            <div class="labDataRight">
+                <div id="temaContainer"><br> <b>Тема:</b>Придбати практичні навички
+                    роботи з html-документом, таблицями, формами, зображеннями,
+                    посиланнями.<br><br><b>Мета:</b>придбати практичні навички
+                    роботи з HTML-документом, таблицями, ,
+                    зображеннями, посиланнями, списками, формами
+                    Створити шаблон звітного HTML-документом для відображення
+                    результатів роботи всіх лабораторних робіт.<br><br>
+                    <a href="https://github.com/kolesnykt25/webLab">GitHub Репозиторій</a>
+                    <br><br>
+                </div>
+
+                <div id="descrContainer" hidden>
+                    <h3><b>Опис предметного середовища</b></h3>
+                    <h4>Head:</h4>
+                    <ul>
+                        <li> Назва компанії </li>
+                    </ul>
+                    <h4>Body:</h4>
+                    <ul>
+                        <li>Інформація про послуги</li>
+                        <li>Ціни</li>
+                        <li>Терміни виконання</li>
+                        <li>Заявка на зворотній звʼязок</li>
+                    </ul>
+                    <h4>Footer:</h4>
+                    <ul>
+                        <li>Посилання на наші соціальні мережі</li>
+                        <li>Посилання на сторінку з описом предметної галузі</li>
+                    </ul>
+                    <h3><b>Функціональні можливості:</b></h3>
+                    <h4>Не зараєстрований користувач:</h4>
+                    <ul>
+                        <li>Перегляд послуг</li>
+                        <li>Перегляд інформації про компанію</li>
+                        <li>Має можливість звʼязатись з асистентом для уточнення
+                            послуги</li>
+                    </ul>
+                    <h4>Зараєстрований користувач:</h4>
+                    <ul>
+                        <li>Може замовити послугу</li>
+                        <li>Може слідкувати за станом задачі в режимі реального
+                            часу</li>
+                        <li>Має можливість бачити всі задачі які замовив</li>
+                    </ul>
+                    <h3><b>Не функціональні вимоги:</b></h3>
+                    <h4>ОС</h4>
+                    <ul>
+                        <li>Будь-яка</li>
+                    </ul>
+                    <h4>Браузер</h4>
+                    <ul>
+                        <li>Будь-який</li>
+                    </ul>
+                </div>
+
+                <div id="codeContainer" hidden>
+                    <h4>Код головної сторінки:</h4>
+                    <pre>
+                        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;IT-компанія&lt;/title&gt;
+    &lt;h1 style="color:#333; text-align: center;"&gt;TMN Dev&lt;/h1&gt;
+
+    &lt;style&gt;
+    /* стилі для меню */
+    .menu {
+      float: left;
+      width: 20%;
+    }
+    .menu button {
+      display: block;
+      width: 100%;
+      padding: 20px;
+      margin-top: 10px;
+      background-color: #ddd;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      color: #333;
+    }
+
+    .menu button:hover {
+      background-color: #bbb;
+      color: #fff;
+    }
+
+    /* стилі для зображення та таблиць */
+    .content {
+      float: right;
+      width: 80%;
+    }
+
+    .content button {
+      display: block;
+      width: 170px;
+      height: 70px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: darkgoldenrod;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .content button:hover {
+      background-color: darkolivegreen;
+    }
+
+    .content img {
+      border-radius: 10px;
+      display: block;
+      max-width: 50%;
+      height: auto;
+      margin: auto;
+      /* margin-bottom: 20px; */
+    }
+
+    .content table {
+      /* border-collapse: collapse; */
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .content header {
+      text-align: center;
+      color:#333;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .content th,
+    .content td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .content th {
+      background-color: #eee;
+      font-weight: bold;
+    }
+
+    input[type=submit] {
+      text-align: center;
+      color: white;
+      background-color: #fc9404;
+      border: transparent;
+      height: 40px;
+      width: 100px;
+    }
+
+    .flex-center {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    
+    .rounded-box {
+      width: 50%;
+      border-radius: 10px;
+      background-color: #eee;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .rounded-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rounded-box li {
+      align-content: center;
+      border-radius: 10px;
+      padding: 5px;
+      margin-bottom: 5px;
+      background-color: #fff;
+    }
+    body {
+      font-size: 15px;
+      font-family: sans-serif;
+    }
+  &lt;/style&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div class="menu"&gt;
+      &lt;button&gt;Головне меню&lt;/button&gt;
+      &lt;button&gt;Контакти&lt;/button&gt;
+      &lt;button&gt;Мій аккаунт&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="content"&gt;
+      &lt;img src="images/logo.jpg"&gt;
+      &lt;div class="flex-center"&gt;
+
+        &lt;h3&gt;it - компанія&lt;/h3&gt;
+        &lt;h4&gt;Будь-яке завдання за ваші
+          гроші&lt;/h4&gt;
+
+        &lt;div class="rounded-box"&gt;
+          &lt;h5&gt;Ми можемо це розробити:&lt;/h5&gt;
+          &lt;ul&gt;
+            &lt;li&gt; Дизайн &lt;/li&gt;
+            &lt;li&gt; Мобільні додатки &lt;/li&gt;
+            &lt;li&gt; Web сайти &lt;/li&gt;
+            &lt;li&gt; Мобільні Ігри &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+
+        &lt;div class="rounded-box"&gt;
+          &lt;h5&gt;Алгоритм співпраці з нами:&lt;/h5&gt;
+          &lt;ol&gt;
+            &lt;li&gt;Заповніть поля нижще для того щоб з вами звʼязався наш помічник&lt;/li&gt;
+            &lt;li&gt;Зʼясовуємо проблему&lt;/li&gt;
+            &lt;li&gt;Реалізація&lt;/li&gt;
+            &lt;li&gt;Віддаємо готовий продукт&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+      &lt;h4&gt;Ціни та терміни виконання:&lt;/h4&gt;
+      &lt;table&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Тип задачі&lt;/th&gt;
+            &lt;th&gt;Ціна&lt;/th&gt;
+            &lt;th&gt;Терміни&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Дизайн&lt;/td&gt;
+            &lt;td&gt;Від 50$&lt;/td&gt;
+            &lt;td&gt;Від 3 днів&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Мобільний додаток&lt;/td&gt;
+            &lt;td&gt;Від 500$&lt;/td&gt;
+            &lt;td&gt;Від 10 днів&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;WEB сайт&lt;/td&gt;
+            &lt;td&gt;Від 300$&lt;/td&gt;
+            &lt;td&gt;Від 15 днів&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Мобільні ігри&lt;/td&gt;
+            &lt;td&gt;Від 600$&lt;/td&gt;
+            &lt;td&gt;Від 20 днів&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;h4&gt;Зворотній звʼязок&lt;/h4&gt;
+      &lt;input type="text" name="name" value="Імʼя"&gt;
+      &lt;br&gt;
+      &lt;input type="text" name="phoneNumber" value="Номер телефону"&gt;
+      &lt;br&gt;
+      &lt;button&gt;Зателефонувати&lt;br&gt;мені&lt;/button&gt;
+    &lt;/body&gt;
+&lt;footer&gt;
+  &lt;a href="main.html"&gt;Опис предметної галузі&lt;/a&gt;
+  &lt;h5&gt;Наші соціальні мережі:&lt;/h5&gt;
+  &lt;ul&gt;
+    &lt;li&gt; &lt;a href="https://www.google.com.ua"&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt; &lt;a href="#"&gt;Twitter &lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/footer&gt;
+  &lt;/html&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div id="imgContainer" hidden>
+                    <img class="scheme-image" src="images/siteImg1.png" alt="">
+                    <img class="scheme-image" src="images/siteImg2.png" alt="">
+                </div>
+                
+                <div id="reportContainer" hidden>
+                    <h3>Висновки</h3>
+                    <h4>Для виконання даного компʼютерного практикуму, ми обрали таку
+                        предметну галузь: "IT-компанія". Продумали та описали функціональні та не функціональні
+                        вимоги, бізнес-логіку нашого WEB-додатку.<br>
+                        Наша бригада засвоїла практичні навички роботи з HTML-документом, таблицями, зображеннями, 
+                        посиланнями, списками, формами. Створили звітний HTML-документ для відображення результатів роботи всіх 
+                        лабораторних робіт.
+                    </h4>
+                </div>
+                <div id="devContainer" hidden>
+                    <h4>Даний компʼютерний практикум виконали студенти групи ІК-02:</h4>
+                    <ul>
+                        <li>Колесник Тарас</li>
+                        <li>Чала Наталія</li>
+                        <li>Ільницький Михайло</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

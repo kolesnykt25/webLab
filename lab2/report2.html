@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Звіти</title>
+    <meta charset="UTF-8">
+    <style>
+        .container {
+            background: linear-gradient(0deg, rgba(255,251,199,1) 0%, rgba(0,78,76,1) 100%);
+            border-radius: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+        }
+
+        .left {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+
+        .right {
+            width: 55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: row; */
+            /* align-items: center;
+            justify-content: center; */
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .title {
+            font-weight: bold;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .imageCart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 33%;
+        }
+
+        .labNumber {
+            background-color: lightblue;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: stretch;
+            margin-top: 10px;
+        }
+
+        .labNumber button {
+            flex: 1;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color:lightslategray
+
+        }
+        .lab-data {
+            background-color: lightblue;
+            border-radius: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            align-items: self-start;
+        }
+
+        .labDataLeft {
+            background-color: rgb(79, 149, 148);
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        .labDataRight {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 240, 186);
+            flex-direction: column;
+            border-radius: 10px;
+            margin-right: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .labDataLeft button {
+            margin: 10px;
+            height: 50px;
+            border-radius: 10px;
+            background-color:bisque
+        }
+        .scheme-image {
+            width: 80%;
+            height: 40%;
+        }
+
+        body {
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ"
+          ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND та BACKEND РОЗРОБОК"</h1>
+        <h4>Бригада N22</h4>
+      </div>
+      <div class="right">
+        <div class="imageCart">
+          <img class="image" src="images/taras.jpg">
+          <h2 class="title">Колесник<br>Тарас</h2>
+        </div>
+        <div class="imageCart">
+          <img class="image" src="images/natalia.jpg">
+          <h2 class="title">Чала<br>Наталія</h2>
+        </div>
+        <div class="imageCart">
+          <img class="image" src="images/mykhailo.jpg">
+          <h2 class="title">Ільницький<br>Михайло</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="labNumber">
+      <button onclick="window.location.href= 'report1.html'">
+        Lab 1
+      </button>
+      <button onclick="window.location.href= 'report2.html'">
+        Lab 2
+      </button>
+      <button onclick="window.location.href= 'report3.html'">
+        Lab 3
+      </button>
+      <button>Lab 4</button>
+      <button>Lab 5</button>
+      <button>Lab 6</button>
+      <button>Lab 7</button>
+      <button>Lab 8</button>
+      <button>Lab 9</button>
+    </div>
+
+    <div class="lab-data">
+      <div class="labDataLeft">
+        <button onclick="
+          temaContainer.hidden= false
+          styleConnectTypes.hidden= true
+          selectorTag.hidden= true
+          selectorClass.hidden= true
+          selectorids.hidden= true
+          selectorother.hidden= true
+          customcss.hidden= true
+          report.hidden= true
+          ">Тема, мета ЛР N2 місце розташування сайту, звіту</button>
+        <button onclick="
+          temaContainer.hidden= true
+          styleConnectTypes.hidden= false
+          selectorTag.hidden= true
+          selectorClass.hidden= true
+          selectorids.hidden= true
+          selectorother.hidden= true
+          customcss.hidden= true
+          report.hidden= true
+          ">Способи підключення стилів</button>
+        <button>Селектори</button>
+        <button onclick="
+          temaContainer.hidden= true
+          styleConnectTypes.hidden= true
+          selectorTag.hidden= false
+          selectorClass.hidden= true
+          selectorids.hidden= true
+          selectorother.hidden= true
+          customcss.hidden= true
+          report.hidden= true
+          " style="width: 70%;">Селектор тегу</button>
+        <button onclick="
+          temaContainer.hidden= true
+          styleConnectTypes.hidden= true
+          selectorTag.hidden= true
+          selectorClass.hidden= false
+          selectorids.hidden= true
+          selectorother.hidden= true
+          customcss.hidden= true
+          report.hidden= true
+          " style="width: 70%;">Селектор класу</button>
+        <button onclick="
+          temaContainer.hidden= true
+          styleConnectTypes.hidden= true
+          selectorTag.hidden= true
+          selectorClass.hidden= true
+          selectorids.hidden= false
+          selectorother.hidden= true
+          customcss.hidden= true
+          report.hidden= true
+          " style="width: 70%;">Селектор ідентифікатора</button>
+        <button onclick="
+          temaContainer.hidden= true
+          styleConnectTypes.hidden= true
+          selectorTag.hidden= true
+          selectorClass.hidden= true
+          selectorids.hidden= true
+          selectorother.hidden= false
+          customcss.hidden= true
+          report.hidden= true
+          " style="width: 70%;">Інші селектори</button>
+        <button onclick="
+          temaContainer.hidden= true
+          styleConnectTypes.hidden= true
+          selectorTag.hidden= true
+          selectorClass.hidden= true
+          selectorids.hidden= true
+          selectorother.hidden= true
+          customcss.hidden= false
+          report.hidden= true
+          ">CSS:Шрифти Текст Таблиці Фон Контур Списки CSS Просунутий</button>
+        <button onclick="
+          temaContainer.hidden= true
+          styleConnectTypes.hidden= true
+          selectorTag.hidden= true
+          selectorClass.hidden= true
+          selectorids.hidden= true
+          selectorother.hidden= true
+          customcss.hidden= true
+          report.hidden= false
+          ">Висновки до ЛР2</button>
+      </div>
+
+      <div class="labDataRight">
+        <div id="temaContainer"><br> <b>Тема:</b>КАСКАДНІ ТАБЛИЦІ СТИЛІВ.
+          СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ
+          ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.<br><br><b>Мета:</b>придбати
+          практичні навички роботи з селекторами, ідентифікаторами,
+          списками, різноманітними властивостями кольору і фону, зовнішними та
+          внутрішними відступами, плаваючими елементами, оформленням текстових
+          елементів<br><br>
+          <a href="https://github.com/kolesnykt25/webLab">GitHub Репозиторій</a>
+          <br><br>
+        </div>
+
+        <div id="styleConnectTypes" hidden>
+          <p>&lt;style&gt;</p>
+
+          <p>/* тут прописуємо стилі для потрібних елементів */</p>
+
+          <p>&lt;/style&gt;</p>
+
+        </div>
+
+        <div id="selectorTag" hidden>
+          <h4>Селектор тега h4:</h4>
+          <p>h4 {</p>
+          <p>color: darkslategrey;</p>
+          <p>}</p>
+          <h4>Приклад використання селектору тега h4 у коді:</h4>
+          <p>&lt;h4&gt;Будь-яке завдання за ваші&nbsp;гроші&lt;/h4&gt;</p>
+          <img class="scheme-image" src="images/h4image.png" alt="">
+        </div>
+
+        <div id="selectorClass" hidden>
+          <h4>Селектор класу:</h4>
+          <p>.flex-center {</p>
+
+          <p>display: flex;</p>
+
+          <p>align-items: center;</p>
+
+          <p>width: 100%;</p>
+
+          <p>flex-direction: column;</p>
+
+          <p>}</p>
+
+
+          <h4>Приклад використання селектору класу у коді:</h4>
+
+          <p>&lt;div class=&quot;flex-center&quot;&gt;</p>
+
+          <p>&nbsp;</p>
+
+          <p>&lt;h3&gt;it - компанія&lt;/h3&gt;</p>
+
+          <p>&lt;h4&gt;Будь-яке завдання за ваші</p>
+
+          <p>гроші&lt;/h4&gt;</p>
+
+          <p>&nbsp;</p>
+
+          <p>&lt;div class=&quot;rounded-box&quot;&gt;</p>
+
+          <p>&lt;h5&gt;Ми можемо це розробити:&lt;/h5&gt;</p>
+
+          <p>&lt;ul&gt;</p>
+
+          <p>&lt;li&gt; Дизайн &lt;/li&gt;</p>
+
+          <p>&lt;li&gt; Мобільні додатки &lt;/li&gt;</p>
+
+          <p>&lt;li&gt; Web сайти &lt;/li&gt;</p>
+
+          <p>&lt;li&gt; Мобільні Ігри &lt;/li&gt;</p>
+
+          <p>&lt;/ul&gt;</p>
+
+          <p>&lt;/div&gt;</p>
+
+          <p>&nbsp;</p>
+
+          <p>&lt;div class=&quot;rounded-box&quot;&gt;</p>
+
+          <p>&lt;h5&gt;Алгоритм співпраці з нами:&lt;/h5&gt;</p>
+
+          <p>&lt;ol&gt;</p>
+
+          <p>&lt;li&gt;Заповніть поля нижще для того щоб з вами звʼязався наш
+            помічник&lt;/li&gt;</p>
+
+          <p>&lt;li&gt;Зʼясовуємо проблему&lt;/li&gt;</p>
+
+          <p>&lt;li&gt;Реалізація&lt;/li&gt;</p>
+
+          <p>&lt;li&gt;Віддаємо готовий продукт&lt;/li&gt;</p>
+
+          <p>&lt;/ol&gt;</p>
+
+          <p>&lt;/div&gt;</p>
+
+          <p>&nbsp;</p>
+
+          <p>&lt;/div&gt;</p>
+
+          <img class="scheme-image" src="images/classselectorImage.png" alt="">
+        </div>
+
+        <div id="selectorids" hidden>
+          <h4>Селектор ідентифікатора:</h4>
+          <p>#customh {</p>
+
+          <p>color: red;</p>
+
+          <p>}</p>
+
+          <h4>Приклад використання селектора ідентифікатора у коді:</h4>
+          <p>&lt;h5 id=&quot;customh&quot;&gt;Наші соціальні мережі:&lt;/h5&gt;</p>
+          <img class="scheme-image" src="images/tagselector.png" alt="">
+        </div>
+
+        <div id="selectorother" hidden>
+          <h4>Селектор атрибуту:</h4>
+          <p>input[type=&quot;text&quot;] {</p>
+
+          <p>border: transparent;</p>
+
+          <p>background-color:darkgoldenrod;</p>
+
+          <p>color: white;</p>
+
+          <p>border-radius: 10px;</p>
+
+          <p>height: 20px;</p>
+
+          <p>margin-bottom: 5px;</p>
+
+          <p>font-family: sans-serif;</p>
+
+          <p>padding-left: 10px;</p>
+
+          <p>}</p>
+
+          <h4>Приклад використання селектора атрибуту у коді:</h4>
+          <p>&lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;Імʼя&quot;&gt;</p>
+          <img class="scheme-image" src="images/atributeSelector.png" alt="">
+        </div>
+
+        <div id="customcss" hidden>
+          <h4>Шрифти:</h4>
+          <p>body {</p>
+
+          <p>font-size: 15px;</p>
+
+          <p>font-family: sans-serif;</p>
+
+          <p>}</p>
+
+          <h4>Контури:</h4>
+
+          <p>#strokedH {</p>
+
+          <p>-webkit-text-stroke: 1px purple; /* для safari*/</p>
+
+          <p>text-stroke: 1px purple;</p>
+
+          <p>}</p>
+
+          <h4>Фон:</h4>
+          <p>#backgroundH {</p>
+
+          <p>background-color: burlywood;</p>
+
+          <p>}</p>
+
+          <h4>Колір тексту:</h4>
+          <p>h4 {</p>
+
+          <p>color: darkslategrey;</p>
+
+          <p>}</p>
+
+
+          <h4>CSS-властивості для таблиць, багаторівневих списків:</h4>
+          <h5>Багаторівневий список:</h5>
+          <p>.rounded-box ol li ul {</p>
+
+          <p>padding: 0;</p>
+
+          <p>margin-top: 10px;</p>
+
+          <p>margin-left: 10px;</p>
+
+          <p>}</p>
+          <h5>CSS-властивості для таблиць:</h5>
+          <p>.content table {</p>
+
+          <p>width: 100%;</p>
+
+          <p>margin-bottom: 20px;</p>
+
+          <p>}</p>
+
+          <p>&nbsp;</p>
+
+          <p>.content th, .content td {</p>
+
+          <p>padding: 10px;</p>
+
+          <p>text-align: center;</p>
+
+          <p>border: 1px solid #ddd;</p>
+
+          <p>}</p>
+
+          <p>&nbsp;</p>
+
+          <p>.content th {</p>
+
+          <p>background-color: #eee;</p>
+
+          <p>font-weight: bold;</p>
+
+          <p>}</p>
+
+          <h4>СSS Просунутий:</h4>
+          <h5>CSS Вирівнювання тексту:</h5>
+          <p>.content th, .content td {</p>
+
+          <p>padding: 10px;</p>
+
+          <p>text-align: center;</p>
+
+          <p>border: 1px solid #ddd;</p>
+
+          <p>}</p>
+
+          <p>&nbsp;</p>
+
+          <h5>CSS Розмір шрифту:</h5>
+          <p>body {</p>
+
+          <p>font-size: 15px;</p>
+
+          <p>font-family: sans-serif;</p>
+
+          <p>}</p>
+
+          <h5></h5>
+        </div>
+
+        <div id="report" hidden>
+          <h3>Висновки</h3>
+          <h4>Виконавши даний практикум, ми придбали практичні навички роботи з 
+            селекторами, ідентифікаторами,
+            списками, різноманітними властивостями кольору і фону, зовнішними та
+            внутрішними відступами, плаваючими елементами, оформленням текстових
+            елементів.
+          </h4>
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>IT-компанія</title>
+    <h1 style="color:#333; text-align: center;">TMN Dev</h1>
+
+    <style>
+    /* стилі для меню */
+    .menu {
+      width: 20%;
+      float: left;
+    }
+
+    .menu button {
+      display: block;
+      width: 100%;
+      padding: 20px;
+      margin-top: 10px;
+      background-color: #ddd;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      color: #333;
+    }
+
+    .menu button:hover {
+      background-color: #bbb;
+      color: #fff;
+    }
+
+    /* стилі для зображення та таблиць */
+    
+    .content {
+      float: right;
+      width: 80%;
+    }
+
+    .content button {
+      display: block;
+      width: 170px;
+      height: 70px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: darkgoldenrod;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .content button:hover {
+      background-color: darkolivegreen;
+    }
+
+    .content img {
+      border-radius: 10px;
+      display: block;
+      max-width: 50%;
+      height: auto;
+      margin: auto;
+      /* margin-bottom: 20px; */
+    }
+
+    .content header {
+      text-align: center;
+      color:#333;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .content table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .content th, .content td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .content th {
+      background-color: #eee;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      border: transparent;
+      background-color:darkgoldenrod;
+      color: white;
+      border-radius: 10px;
+      height: 20px;
+      margin-bottom: 5px;
+      font-family: sans-serif;
+      padding-left: 10px;
+    }
+
+    .flex-center {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    
+    .rounded-box {
+      width: 50%;
+      border-radius: 10px;
+      background-color: #eee;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .rounded-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rounded-box ol li ul {
+      padding: 0;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .rounded-box li {
+      align-content: center;
+      border-radius: 10px;
+      padding: 5px;
+      margin-bottom: 5px;
+      background-color: #fff;
+    }
+
+    #customh {
+      color: red;
+    }
+    
+    #strokedH {
+      -webkit-text-stroke: 1px purple; /* для safari*/
+			text-stroke: 1px purple;
+    }
+
+    #backgroundH {
+      background-color: burlywood;
+    }
+
+    h4 {
+      color: darkslategrey;
+    }
+
+    body {
+      font-size: 15px;
+      font-family: sans-serif;
+    }
+
+  </style>
+  </head>
+
+  <body>
+    <div class="menu">
+      <button>Головне меню</button>
+      <button>Контакти</button>
+      <button>Мій аккаунт</button>
+    </div>
+    <div class="content">
+      <img src="images/logo.jpg">
+      <div class="flex-center">
+
+        <h3 id="strokedH">it - компанія</h3>
+        <h4 id="backgroundH">Будь-яке завдання за ваші гроші</h4>
+
+        <div class="rounded-box">
+          <h5>Ми можемо це розробити:</h5>
+          <ul>
+            <li>Дизайн</li>
+            <li>Мобільні додатки</li>
+            <li>Web сайти</li>
+            <li>Мобільні Ігри</li>
+          </ul>
+        </div>
+
+        <div class="rounded-box">
+          <h5>Алгоритм співпраці з нами:</h5>
+          <ol>
+            <li>Заповніть поля нижще для того щоб з вами звʼязався наш помічник</li>
+            <li>Зʼясовуємо проблему:
+              <ul>
+                <li>Мета ПЗ</li>
+                <li>Терміни виконання</li>
+              </ul>
+            </li>
+            <li>Реалізація</li>
+            <li>Віддаємо готовий продукт</li>
+          </ol>
+        </div>
+
+      </div>
+      <h4>Ціни та терміни виконання:</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Тип задачі</th>
+            <th>Ціна</th>
+            <th>Терміни</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Дизайн</td>
+            <td>Від 50$</td>
+            <td>Від 3 днів</td>
+          </tr>
+          <tr>
+            <td>Мобільний додаток</td>
+            <td>Від 500$</td>
+            <td>Від 10 днів</td>
+          </tr>
+          <tr>
+            <td>WEB сайт</td>
+            <td>Від 300$</td>
+            <td>Від 15 днів</td>
+          </tr>
+          <tr>
+            <td>Мобільні ігри</td>
+            <td>Від 600$</td>
+            <td>Від 20 днів</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4>Зворотній звʼязок</h4>
+      <input type="text" name="name" value="Імʼя">
+      <br>
+      <input type="text" name="phoneNumber" value="Номер телефону">
+      <br>
+      <button>Зателефонувати<br>мені</button>
+    </body>
+    <footer>
+      <a href="main.html">Опис функціоналу застосунку</a>
+      <h5 id="customh">Наші соціальні мережі:</h5>
+      <ul>
+        <li> <a href="https://www.google.com.ua">Instagram</a></li>
+        <li> <a href="#">Twitter </a></li>
+      </ul>
+
+    </footer>
+  </html>
